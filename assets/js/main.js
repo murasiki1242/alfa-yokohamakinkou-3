@@ -31,7 +31,7 @@ const app = Vue.createApp({
           // q3: 'ききき',
         },
         stage4: {
-          q1: '地下倉庫'
+          q1: '地下倉庫',
         }
       },
 
