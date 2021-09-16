@@ -271,7 +271,18 @@ STAGE3-2追加ここまで -->
 
 STAGE3-3追加　ここまで -->
 
-          
+          <!-- STAGE3クリア画面　ここから -->
+        <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：3　クリア！</div>
+              <div class="clear-message__content">門の鍵がある家を見つけることができた<br>
+                しかし家は広く全部の部屋を探す時間もない。どうすれば...</div>
+                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE3クリア画面　ここまで -->
       </div>
       <!-- STAGE3　ここまで -->
 
